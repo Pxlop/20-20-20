@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.Pxlop.MainController">
+    <Text style="-fx-alignment: center; -fx-text-alignment: center; -fx-font-family: sans-serif; -fx-font-size: 36;" text="20-20-20" textAlignment="CENTER" />
+    <Label fx:id="timerText" style="-fx-alignment: center; -fx-text-alignment: center; -fx-font-family: sans-serif; -fx-font-size: 24; -fx-padding: 10;" textAlignment="CENTER" />
+    <Button fx:id="startButton" alignment="CENTER" style="-fx-font-family: sans-serif; -fx-background-color: #66dd66; -fx-pref-width: 50; -fx-pref-height: 25; -fx-font-size: 13;" text="Start" textAlignment="CENTER" />
+   <Button fx:id="stopButton" alignment="CENTER" mnemonicParsing="false" style="-fx-font-family: sans-serif; -fx-background-color: #dd6666; -fx-pref-width: 50; -fx-pref-height: 25; -fx-font-size: 13;" text="Stop" textAlignment="CENTER" />
+</VBox>
