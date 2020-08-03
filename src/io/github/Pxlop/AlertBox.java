@@ -19,8 +19,11 @@ public class AlertBox {
         window.setWidth(300);
         window.setHeight(200);
         
+        //Message label
         Label label = new Label();
         label.setText(message);
+        
+        //Close button
         Button closeButton = new Button("Close");
         closeButton.setStyle("-fx-background-radius: 0;");
         closeButton.setOnAction(e -> {
@@ -28,6 +31,7 @@ public class AlertBox {
             runAfterClose.run();
         });
         
+        //VBox
         VBox layout = new VBox(10);
         layout.getChildren().addAll(label, closeButton);
         layout.setAlignment(Pos.CENTER);

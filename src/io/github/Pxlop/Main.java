@@ -61,6 +61,7 @@ public class Main extends Application {
     
     public static void setSceneMain() {
         controller.setupUI(mins * 60000);
+        window.setTitle("20-20-20");
         window.setScene(scene);
     }
     
