@@ -10,12 +10,42 @@ import javafx.stage.Stage;
 
 public class AlertBox {
     
+    public static void display(String title, String message, Runnable runAfterClose) {
+        Stage window = new Stage();
+        
+        //Block events to other windows
+        window.initModality(Modality.APPLICATION_MODAL);
+        window.setTitle(title);
+        window.setWidth(300);
+        window.setHeight(200);
+        
+        Label label = new Label();
+        label.setText(message);
+        Button closeButton = new Button("Close");
+        closeButton.setStyle("-fx-background-radius: 0;");
+        closeButton.setOnAction(e -> {
+            window.close();
+            runAfterClose.run();
+        });
+        
+        VBox layout = new VBox(10);
+        layout.getChildren().addAll(label, closeButton);
+        layout.setAlignment(Pos.CENTER);
+        
+        //Display window and wait for it to be closed before returning
+        Scene scene = new Scene(layout);
+        window.setScene(scene);
+        window.show();
+    }
+    
     public static void display(String title, String message) {
         Stage window = new Stage();
         
         //Block events to other windows
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
+        window.setWidth(300);
+        window.setHeight(200);
         
         Label label = new Label();
         label.setText(message);
@@ -27,7 +57,7 @@ public class AlertBox {
         layout.setAlignment(Pos.CENTER);
         
         //Display window and wait for it to be closed before returning
-        Scene scene = new Scene(layout, 300, 200);
+        Scene scene = new Scene(layout);
         window.setScene(scene);
         window.show();
     }
