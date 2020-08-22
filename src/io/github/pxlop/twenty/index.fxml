@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.Pxlop.MainController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.pxlop.twenty.MainController">
     <Text style="-fx-text-alignment: center; -fx-font-size: 36; -fx-font-weight: bold;" text="20-20-20" textAlignment="CENTER" />
     <Label fx:id="timerText" style="-fx-text-alignment: center; -fx-font-family: sans-serif; -fx-font-size: 24; -fx-padding: 10;" textAlignment="CENTER" />
     <HBox alignment="CENTER" spacing="10.0">
